@@ -1,0 +1,145 @@
+@font-face {
+    font-family: Norse;
+    src: url(../fonts/Norse-Bold.otf);
+}
+
+:root {
+    --darkreader-neutral-background: #131516;
+    --darkreader-neutral-text: #d8d4cf;
+    --darkreader-selection-background: #004daa;
+    --darkreader-selection-text: #e8e6e3;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Roboto;
+}
+
+::selection {
+    background-color: #004daa;
+    color: #e8e6e3;
+}
+
+body {
+    background-color: var(--darkreader-neutral-background);
+    color: var(--darkreader-neutral-text);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+header > div {
+    background-color: #13151680;
+    position:relative;
+    top:20%;
+}
+
+.logo_placeholder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo_placeholder > * {
+    font-size: 5rem;
+    font-family: Norse;
+}
+
+header img {
+    width:5rem;
+    aspect-ratio: 1;
+}
+
+header {
+    flex:1 200px;
+    background-image: url(./images/background.jpg);
+    height: 100vh;
+}
+main {
+    flex:2 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.main-info, .main-form, .main-footer{
+    padding:25px;
+}
+
+.main-info {
+    font-size: 2rem;
+}
+
+.main-form > div {
+    font-size: 1.2rem;
+    padding-bottom: 10px;
+}
+
+form {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: column;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    gap:10px;
+}
+
+form > div {
+    flex:1;
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+form > div > div {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+}
+
+form > div > div >*{
+    height: 1.5rem;
+    flex: 1;
+}
+label {
+    min-width: 170px;
+}
+
+.main-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 10px;
+}
+button {
+    height: 30px;
+    width: 100%;
+    border-radius: 20px;
+    background-color: rgb(30, 40, 56);
+    color: var(--darkreader-neutral-text);
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    font-weight: bold;
+}
+
+button:active {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.main-footer > div {
+    display: flex;
+}
+
+div > a {
+    color:var(--dar);
+}
+
+input:focus {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.error {
+    box-shadow: 12px 14px 12px -7px rgba(255,  64 ,  76 ,0.38), 9px 9px 10px -7px rgba(255,  64 ,  76 ,0.19) inset;
+}
