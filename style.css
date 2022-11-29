@@ -40,6 +40,7 @@ header > div {
     display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
 }
 
 .logo_placeholder > * {
@@ -83,7 +84,6 @@ form {
     justify-content: space-between;
     flex-wrap: wrap;
     flex-direction: column;
-    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
     gap:10px;
 }
 
@@ -92,6 +92,7 @@ form > div {
     width:100%;
     display: flex;
     flex-wrap: wrap;
+    gap:10px;
 }
 
 form > div > div {
@@ -141,5 +142,5 @@ input:focus {
 }
 
 .error {
-    box-shadow: 12px 14px 12px -7px rgba(255,  64 ,  76 ,0.38), 9px 9px 10px -7px rgba(255,  64 ,  76 ,0.19) inset;
+    border: red dashed 5px;
 }
